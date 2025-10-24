@@ -1,0 +1,36 @@
+# Multi-Exchange Trading Platform - Environment Configuration
+# Copy this file to .env and fill in your API keys
+
+# Binance API Keys
+BINANCE_API_KEY=your_binance_api_key_here
+BINANCE_API_SECRET=your_binance_api_secret_here
+
+# Bybit API Keys  
+BYBIT_API_KEY=your_bybit_v5_key
+BYBIT_API_SECRET=your_bybit_v5_secret
+
+# MEXC API Keys
+MEXC_API_KEY=your_mexc_api_key_here
+MEXC_API_SECRET=your_mexc_api_secret_here
+
+# Alpaca API Keys (for US stocks and crypto)
+ALPACA_API_KEY=your_alpaca_api_key_here
+ALPACA_API_SECRET=your_alpaca_api_secret_here
+ALPACA_BASE_URL=https://paper-api.alpaca.markets  # Use https://api.alpaca.markets for live trading
+
+# Coinbase Pro API Keys
+COINBASE_API_KEY=your_coinbase_api_key_here
+COINBASE_API_SECRET=your_coinbase_api_secret_here
+COINBASE_PASSPHRASE=your_coinbase_passphrase_here
+
+# Kraken API Keys (US compliant crypto exchange)
+KRAKEN_API_KEY=your_kraken_api_key_here
+KRAKEN_API_SECRET=your_kraken_api_secret_here
+
+# Note: The platform will automatically use the API keys for the selected exchange
+# When you select "binance" in the UI, it will use BINANCE_API_KEY and BINANCE_API_SECRET
+# When you select "bybit" in the UI, it will use BYBIT_API_KEY and BYBIT_API_SECRET  
+# When you select "mexc" in the UI, it will use MEXC_API_KEY and MEXC_API_SECRET
+# When you select "alpaca" in the UI, it will use ALPACA_API_KEY and ALPACA_API_SECRET
+# When you select "coinbase" in the UI, it will use COINBASE_API_KEY, COINBASE_API_SECRET, and COINBASE_PASSPHRASE
+# When you select "kraken" in the UI, it will use KRAKEN_API_KEY and KRAKEN_API_SECRET

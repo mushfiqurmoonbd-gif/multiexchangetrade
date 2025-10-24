@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: tradeboost
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python -m streamlit run app.py --server.port $PORT --server.address 0.0.0.0
+    autoDeploy: true
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10.13
+    healthCheckPath: /
+    disk:
+      name: tmp
+      mountPath: /opt/render/project/tmp
+      sizeGB: 1
+
